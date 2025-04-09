@@ -1,13 +1,12 @@
 // @ts-nocheck
 
-
 import { Box, Typography } from "@mui/material";
 
 export const Search = () => {
   return (
     <Box
       sx={{
-        height: "64px",
+        // height: "64px",
         display: "flex",
         padding: "2px",
         m:'2px',

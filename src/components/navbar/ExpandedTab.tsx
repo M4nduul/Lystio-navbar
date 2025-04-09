@@ -107,6 +107,7 @@ export default function ExpandedTab() {
           overflow: "hidden",
           width: "80%",
           maxWidth: 1000,
+          height:'74px'
         }}
       >
         {/* Location */}
@@ -114,16 +115,15 @@ export default function ExpandedTab() {
           display="flex"
           alignItems="center"
           px={3}
-          py={2}
           flex={1}
           sx={{ borderRight: "1px solid #eee", cursor: "pointer", }}
 
         >
-          <Box margin={1}>
+          <Box margin={2}>
             <img src="/search.svg" alt="search" />
           </Box>
           <Box >
-            <Typography fontWeight="600" variant="body2">
+            <Typography fontWeight="500" variant="body2" sx={{display: 'flex'}} >
               Location
             </Typography>
             <MapBoxSearch  />
@@ -135,19 +135,18 @@ export default function ExpandedTab() {
           display="flex"
           alignItems="center"
           px={3}
-          py={2}
           flex={1}
           sx={{ borderRight: "1px solid #eee" }}
           onClick={handleLocationOpenCat}
         >
-          <Box margin={1}>
+          <Box margin={2}>
             <img src="/apartment.svg" alt="Apartment" />
           </Box>
-          <Box>
-            <Typography fontWeight="600" variant="body2">
+          <Box >
+            <Typography fontWeight="500" variant="body2" sx={{display: 'flex'}}>
               Category
             </Typography>
-            <Typography variant="body2" color="gray">
+            <Typography variant="body2" color="gray"  sx={{py:"6px"}}>
               Select Category
             </Typography>
           </Box>
@@ -179,18 +178,17 @@ export default function ExpandedTab() {
           display="flex"
           alignItems="center"
           px={3}
-          py={2}
           flex={1}
           onClick={handleLocationOpenPrice}
         >
-          <Box margin={1}>
+          <Box margin={2}>
             <img src="/give.svg" alt="give" />
           </Box>
           <Box>
-            <Typography fontWeight="600" variant="body2">
+            <Typography fontWeight="500" variant="body2" sx={{display: 'flex'}}>
               Price
             </Typography>
-            <Typography variant="body2" color="gray">
+            <Typography variant="body2" color="gray" sx={{py:"6px"}} >
               Select Price Range
             </Typography>
           </Box>
@@ -213,9 +211,10 @@ export default function ExpandedTab() {
             variant="contained"
             sx={{
               backgroundColor: "#A540F3",
-              borderRadius: "999px",
+              borderRadius: "40px",
               px: 3,
-              py: 1.5,
+              py: 2,
+              fontWeight: 500,
               textTransform: "none",
               "&:hover": {
                 backgroundColor: "#9439D6",
