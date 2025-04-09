@@ -11,7 +11,7 @@ import {
   Checkbox,
 } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 
 export const DropdownLocation = ({
   cities,
@@ -60,7 +60,7 @@ export const DropdownLocation = ({
       >
         {suggestions.length > 0 && (
           <Box mt={2}>
-            <Typography fontWeight={500} color="grey" fontSize={"14px"} ml={2}>
+            <Typography fontWeight={500} color="grey" fontSize={"14px"} ml={2} display={'flex'}>
               Search Result
             </Typography>
             <List>
@@ -86,7 +86,7 @@ export const DropdownLocation = ({
                   }
                 >
                   <ListItemIcon sx={{ color: "#A540F3" }}>
-                    <LocationOnIcon/>
+                    <img src="/address.svg" alt="address"/>
                   </ListItemIcon>
                   <ListItemText primary={suggestion.properties.full_address} />
                 </ListItem>
@@ -96,7 +96,7 @@ export const DropdownLocation = ({
         )}
 
       <Box mt={2}>
-            <Typography fontWeight={500} color="grey" fontSize={"14px"} ml={2}>
+            <Typography fontWeight={500} color="grey" fontSize={"14px"} ml={2} display={'flex'}>
               Popular Cities
             </Typography>
         <List>
@@ -133,7 +133,7 @@ export const DropdownLocation = ({
            maxHeight: "500px",
           overflowY: "auto"
         }}>
-         <Typography fontWeight={500} color="grey" fontSize={"14px"} ml={2}>
+         <Typography fontWeight={500} color="grey" fontSize={"14px"} ml={2} display={'flex'}>
               Discricts in {active}
             </Typography>
           <List dense>

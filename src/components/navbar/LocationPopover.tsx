@@ -113,7 +113,7 @@ const LocationPopover = ({ anchorEl, open, onClose }: any) => {
               <img src="/location.svg" alt="location" />
               <Typography fontSize={14}>Current location</Typography>
             </Box>
-            <Typography fontSize={12} fontWeight={600} mb={1}>
+            <Typography fontSize={12} fontWeight={600} mb={1} display={'flex'}>
               Recent Searches
             </Typography>
             <List dense>
@@ -129,7 +129,7 @@ const LocationPopover = ({ anchorEl, open, onClose }: any) => {
                 </ListItem>
               ))}
             </List>
-            <Typography fontSize={12} fontWeight={600} mt={2} mb={1}>
+            <Typography fontSize={12} fontWeight={600} mt={2} mb={1} display={'flex'}>
               Popular Cities
             </Typography>
             <Grid container spacing={1}>
