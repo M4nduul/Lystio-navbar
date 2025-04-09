@@ -44,7 +44,7 @@ export default function ExpandedTab() {
 
 
   const [selectedCategoryItems, setSelectedCategoryItems] = useState([]);
-  const [activeCategory, setActiveCategory] = useState("Wohnung");
+  const [activeCategory, setActiveCategory] = useState("");
 
 
 
